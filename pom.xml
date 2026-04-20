@@ -1,0 +1,54 @@
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ */
+package com.mycompany.login1;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ *
+ * @author User
+ */
+public class TestLogin1 {
+    
+    public TestLogin1() {
+        Login1 user = new Login1();
+        //Register Success
+        @Test 
+        void testReisterSuccess(){
+        user.registerUser("kyl_1", "Password@1","+27838968976");
+        assertEquals("User successfully registered." , result);
+    }
+     //Username fail
+     @Test
+     void testUserNameFail(){
+        String result = user.registerUser("kyle!!!!","Password@1","+27838968976");
+        assertEquals("Username is not correctly formatted;please ensure that your username contains an underscoreand is no more than five characters in lenght.",result);
+     }    
+   //Password Fail
+   @Test
+   void testPasswordFail(){
+    String result = user.registerUser("kyl_1","password","+27838968976");
+assertEquals("Pssword is not corrctly formatted; please ensure that the password contains at least eight characters, a capital letter,a number,and a special character.", result);
+    }
+//Phone fail
+@Test
+void testPhoneFail(){
+   String result = user.registerUser("kyl_1","Password@1","08966553");
+   assertEquals("Cell number is incorrectly formatted or does not contain an international code; please correct the number and try again.",result);
+       }
+//Login success 
+@Test
+void testLoginSuccess(){
+  user.registerUser("kyl_1","Password@1","+27838968976");
+  assertTrue(user.loginUser("kyl_1","Password@1"));
+    }
+//Login Fail
+@Test 
+void testLogiFail(){
+  user.registerUser("kyl_1","Password@1","+27838968976");
+  assertFalse(user.loginUser("wrong","wrong"));
+    }
+    }   
+    }

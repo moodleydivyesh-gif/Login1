@@ -1,0 +1,26 @@
+
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.datainputerrordialog;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author User
+ */
+public class DataInputErrorDialog {
+
+    
+    public static void main(String[] args) {
+     
+int response = JOptionPane.showConfirmDialog(null,"A data input error has occurred. Continue?","Data input error",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
+
+if (response == JOptionPane.YES_OPTION){
+    
+   JOptionPane.showConfirmDialog(null,"You selected yes.");
+   }
+else if (response == JOptionPane.NO_OPTION){
+    JOptionPane .showMessageDialog(null,"You selected no.");
+} 
+}
+}  

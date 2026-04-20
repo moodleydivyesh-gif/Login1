@@ -1,0 +1,58 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.chat1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+public class Chat1 {
+
+ public static void main(String[]args){   
+ // Create the Scanner 
+ Scanner input = new Scanner(System.in);
+ Login1 user = new Login1();
+ 
+//Register
+ System.out.println(" ; Register ;");
+ 
+ 
+//Get userName
+ System.out.println("Enter username");
+ String username = input.nextLine();
+ 
+// Get password     
+System.out.println("Enter password");
+String password = input.nextLine();
+
+// Get number 
+System.out.println("Enter cell phone number(+27838968976)");
+       String phone  = input.nextLine();
+       
+// call Register method 
+String result = user.registerUser(username, password, phone);
+System.out.println(result);
+
+//Login 
+System.out.println("\n ;Login;");
+
+//Get login userName
+System.out.println("Enter username:");
+String loginUser = input.nextLine();
+
+//Get login password 
+System.out.println("Enter password: ");
+String loginPass = input.nextLine();
+
+//Displaw login status
+String loginResult = user.returnLoginStatus(loginUser,loginPass);
+System.out.print(loginResult);
+input.close();
+
+        
+}
+}
