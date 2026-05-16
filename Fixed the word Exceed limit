@@ -1,0 +1,4 @@
+int excess = messageText.length() - 250; // This will calculate the words exceeding the 250 word message limit per text
+return "Message exceeds the limit of 250 characters by " + excess + ";Please minimize the size.";
+        }
+  }
