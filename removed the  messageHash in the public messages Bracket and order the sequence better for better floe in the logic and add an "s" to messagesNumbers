@@ -1,0 +1,13 @@
+// Static variables shared across all message objects 
+    private static int totalMessagesSent = 0;
+    private static ArrayList <String> sentMessages = new ArrayList<>();
+
+//Contructor will automate when the new message object is created 
+
+    public Messages(String recipient, String messageText,int messagesNumber){
+        this.recipient = recipient;
+        this.messageText = messageText;
+        this.messageNumber = messagesNumber;
+        this.messageID = generateMessageID();
+        this.messageHash = createMessageHash();
+    }
