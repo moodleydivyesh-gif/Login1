@@ -11,3 +11,5 @@ Login system • Verifies the username and the password • Returns appropriate 
 Unit Testing (Junit) Involves the test classes TestLogin1.java Tests covered • Successful registration • Successful login • Failed login • Login message validation
 
 To run the program open NetBeans ,ensure that the correct main class is set Com.mycompany.login1.Main Run the project and enter the username the password and the cell phone number to run the test right click project then right click Test and finally view the results in the test results window
+
+//-----POE Part 2 Message.java file and updated main file----- 
