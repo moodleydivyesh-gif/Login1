@@ -137,7 +137,27 @@ public void storeMessages(){
        System.out.println(" Error  storing message:" + e.getMessage());
    }
 }
-
+//Getters 
+public String getMessage(){
+    return messageID;
+}
+public String getMessageHash(){
+return messageHash;
+}
+public String getRecipient(){
+    return recipient;
+}
+public  int getMessageNumber(){
+    return messageNumber;
+}
+public String getMessageText(){
+    return messageText;
+}
+//Reset Data message scession ,used in the JUnit test to ensure that the each test starts fresh
+public static void resetScession(){
+    totalMessagesSent = 0;
+    sentMessages.clear();
+}
 }
     
 
