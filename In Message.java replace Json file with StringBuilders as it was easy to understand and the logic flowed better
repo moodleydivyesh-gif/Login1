@@ -1,0 +1,18 @@
+public void storeMessages(){
+   try(FileWriter file  = new FileWriter("message.Json",true)){  // this will apppend the file 
+   StringBuilder json = new StringBuilder();
+            json.append("{\n");
+            json.append("  \"messageID\": \""   ).append(messageID    ).append("\",\n");
+            json.append("  \"messageNumber\": " ).append(messageNumber ).append(",\n");
+            json.append("  \"messageHash\": \"" ).append(messageHash   ).append("\",\n");
+            json.append("  \"recipient\": \""   ).append(recipient     ).append("\",\n");
+            json.append("  \"message\": \""     ).append(messageText   ).append("\"\n");
+            json.append("},\n");
+            file.write(json.toString());
+  
+  file.write(System.lineSeparator()); // new message will have a separate line 
+   }
+   catch(IOException e){
+       System.out.println(" Error  storing message:" + e.getMessage());
+   }
+}
