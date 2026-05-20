@@ -1,0 +1,217 @@
+Final POE part1 ReadMe by Divyesh Moodley ST10512534 Login1 java application is base on object orientated programming principals that involve validations for username ,password and South African cellphone numbers. The project also includes unit testing through Junit to ensure that all methods work correctly . the project structure com.mycompany.login1 • Login1.java //main logic • Mai.java // user inter • TestLogin1.java //Junit Testing
+
+Username validation: • Must contain an underscore(_) • Must not be more than 5 characters long
+
+Password Validation: Password must : • Be at least 8 characters long • Contain a capital letter • Contain a number • Contain a special character
+
+Cell phone validation • Must follow South African format • “+27” and 9 digits after User registration: Returns : • Successful message if all inputs are valid • Error messages if any validation fails
+
+Login system • Verifies the username and the password • Returns appropriate login message
+
+Unit Testing (Junit) Involves the test classes TestLogin1.java Tests covered • Successful registration • Successful login • Failed login • Login message validation
+
+To run the program open NetBeans ,ensure that the correct main class is set Com.mycompany.login1.Main Run the project and enter the username the password and the cell phone number to run the test right click project then right click Test and finally view the results in the test results window
+
+//-----POE Part 2 Message.java file and updated main file----- 
+# 3. POE Part 2 – QuickChat Messaging System
+
+## Objective
+Develop a messaging system allowing users to send, store, and validate messages.
+
+Part 2 builds on Part 1 because messaging should only be accessible after successful login.
+
+---
+
+## 3.1 Welcome to QuickChat
+
+Displayed after login:
+
+`Welcome to QuickChat`
+
+### Reason:
+Confirms successful authentication and improves user experience.
+
+---
+
+## 3.2 Number of Messages
+
+User specifies quantity of messages.
+
+### Reason:
+Controls program flow and determines loop iterations.
+
+---
+
+## 3.3 Message Length Validation
+
+Maximum:
+
+250 characters
+
+### Reason:
+Character limits improve readability and prevent excessively large inputs.
+
+Output:
+
+`Message exceeds 250 characters by X`
+
+---
+
+## 3.4 Recipient Validation
+
+Recipient number must:
+
+- Start with +
+- Use international format
+
+### Reason:
+Ensures correct recipient information before sending messages.
+
+---
+
+## 3.5 Message ID Generation
+
+Automatically generates unique IDs.
+
+### Reason:
+Message IDs uniquely identify messages and assist tracking.
+
+---
+
+## 3.6 Message Hash Generation
+
+Format:
+
+FirstTwoDigits:MessageNumber:FIRSTWORDLASTWORD
+
+Example:
+
+`12:1:HITONIGHT`
+
+### Reason:
+Hashes create compact identifiers that improve traceability.
+
+---
+
+## 3.7 Message Actions
+
+Users choose:
+
+1 → Send  
+2 → Disregard  
+3 → Store
+
+### Reason:
+Provides flexibility in message management.
+
+---
+
+## 3.8 JSON Storage
+
+Messages saved into:
+
+`stored_messages.json`
+
+### Reason:
+JSON provides lightweight structured storage and preserves messages between sessions.
+
+Stored information:
+
+- Message ID
+- Hash
+- Recipient
+- Message text
+- Message count
+
+---
+
+## 3.9 Total Messages
+
+Application counts sent messages.
+
+### Reason:
+Tracks system activity and provides reporting functionality.
+
+---
+
+# 4. Concepts Demonstrated
+
+This project demonstrates:
+
+### Object-Oriented Programming
+Classes:
+- Main
+- Login1
+- Message
+
+Reason:
+Encapsulation improves code organization.
+
+---
+
+### Exception Handling
+
+Uses try-catch blocks.
+
+Reason:
+Prevents crashes from invalid input or file errors.
+
+---
+
+### File Handling
+
+Uses:
+
+- FileReader
+- FileWriter
+
+Reason:
+Allows persistent storage.
+
+---
+
+### JSON Handling
+
+Reason:
+Stores structured data efficiently.
+
+---
+
+### Loops and Conditions
+
+Uses:
+
+- for loops
+- while loops
+- switch statements
+- if statements
+
+Reason:
+Controls application flow.
+
+---
+
+# 5. Automated Testing
+
+JUnit verifies functionality.
+
+Reason:
+Testing detects bugs early and improves software quality.
+
+---
+
+# 6. Technologies Used
+
+- Java
+- Maven
+- Apache NetBeans
+- JSON Simple
+- JUnit 5
+
+---
+
+# 7. Conclusion
+
+The project successfully implements secure registration, login authentication, message handling, JSON storage, and automated testing. It demonstrates practical software development principles and problem-solving using Java.
+
+
