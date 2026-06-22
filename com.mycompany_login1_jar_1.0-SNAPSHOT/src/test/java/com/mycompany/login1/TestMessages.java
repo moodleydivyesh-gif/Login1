@@ -14,11 +14,10 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class TestMessages {
 
-    private Messages messages;
-
-    private final String TEST_RECIPIENT = "+27718693002";
-    private final String TEST_MESSAGE = "Hi Mike can you join us for dinner tonight";
-    private final int TEST_NUM = 2;
+private Messages messages;
+private final String TEST_RECIPIENT = "+27718693002";
+private final String TEST_MESSAGE = "Hi Mike can you join us for dinner tonight";
+private final int TEST_NUM = 2;
 
 
     @BeforeEach

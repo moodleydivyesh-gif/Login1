@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.login1.TestPart3
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.114 s <<< FAILURE! -- in com.mycompany.login1.TestPart3
+com.mycompany.login1.TestPart3.testGetLongestMessage -- Time elapsed: 0.026 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Message 2 is the longest stored message. ==> expected: <ID: 4534124755| Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.> but was: <ID: 4534124755 | Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.mycompany.login1.TestPart3.testGetLongestMessage(TestPart3.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.mycompany.login1.TestPart3.testDeleteMessagesByHash -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Result should confirm deletion. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.mycompany.login1.TestPart3.testDeleteMessagesByHash(TestPart3.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

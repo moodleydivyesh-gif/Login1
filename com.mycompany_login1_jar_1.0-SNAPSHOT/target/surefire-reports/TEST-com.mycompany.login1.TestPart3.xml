@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.login1.TestPart3" time="0.114" tests="8" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT\target\test-classes;C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire4854575839247576075\surefirebooter-20260622140010812_3.jar C:\Users\User\AppData\Local\Temp\surefire4854575839247576075 2026-06-22T14-00-10_587-jvmRun1 surefire-20260622140010812_1tmp surefire_0-20260622140010812_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT\target\test-classes;C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Apache NetBeans\jdk"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire4854575839247576075\surefirebooter-20260622140010812_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS"/>
+    <property name="user.name" value="User"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.2+10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\Apache NetBeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\Users\User\OneDrive - ADvTECH Ltd\Desktop\Programming 5121\com.mycompany_login1_jar_1.0-SNAPSHOT"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\User\GitHubDesktop\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Apache NetBeans\bin\;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testSearchByID" classname="com.mycompany.login1.TestPart3" time="0.008">
+    <system-out><![CDATA[Search by ID result:
+ID: 6142032611 | Hash: 61:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.
+]]></system-out>
+  </testcase>
+  <testcase name="testSentMessagesPopulated" classname="com.mycompany.login1.TestPart3" time="0.008">
+    <system-out><![CDATA[Sent messages: [Did you get the cake?, It is dinner time!]
+----Message----1----
+ID: 9147703833 | Hash: 91:1:DIDCAKE | Recipient: +27834557896 | Message: Did you get the cake?
+
+----Message----2----
+ID: 5193074918 | Hash: 51:4:ITTIME | Recipient: 0838884567 | Message: It is dinner time!
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="testGetLongestMessage" classname="com.mycompany.login1.TestPart3" time="0.026">
+    <failure message="Message 2 is the longest stored message. ==&gt; expected: &lt;ID: 4534124755| Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.&gt; but was: &lt;ID: 4534124755 | Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Message 2 is the longest stored message. ==> expected: <ID: 4534124755| Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.> but was: <ID: 4534124755 | Hash: 45:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.mycompany.login1.TestPart3.testGetLongestMessage(TestPart3.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+  <testcase name="testDisplayReport" classname="com.mycompany.login1.TestPart3" time="0.007">
+    <system-out><![CDATA[
+===== STORED MESSAGE REPORT =====
+Message ID: 9165058132
+Hash: 91:1:DIDCAKE
+Recipient: +27834557896
+Message: ID: 3009086785 | Hash: 30:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.
+-----
+Message ID: 3009086785
+Hash: 30:2:WHERETIME
+Recipient: +27838884567
+Message: ID: 7632040978 | Hash: 76:5:OK,YOU | Recipient: +27838884567 | Message: Ok, I am leaving without you.
+-----
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDisregardedMessageConfirmed" classname="com.mycompany.login1.TestPart3" time="0.007">
+    <system-out><![CDATA[msg3 hash (disregarded): 73:3:YOHOOOO,GATE
+]]></system-out>
+  </testcase>
+  <testcase name="testStoredMessagesPopulated" classname="com.mycompany.login1.TestPart3" time="0.008">
+    <system-out><![CDATA[Stored messages report:
+
+===== STORED MESSAGE REPORT =====
+Message ID: 5150006666
+Hash: 51:1:DIDCAKE
+Recipient: +27834557896
+Message: ID: 7230254222 | Hash: 72:2:WHERETIME | Recipient: +27838884567 | Message: Where are you? You are late! I have asked you to be on time.
+-----
+Message ID: 7230254222
+Hash: 72:2:WHERETIME
+Recipient: +27838884567
+Message: ID: 4507723728 | Hash: 45:5:OK,YOU | Recipient: +27838884567 | Message: Ok, I am leaving without you.
+-----
+
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchByRecipient" classname="com.mycompany.login1.TestPart3" time="0.012">
+    <system-out><![CDATA[Recipient search:
+ID: 5991711560 | Hash: 59:5:OK,YOU | Recipient: +27838884567 | Message: Ok, I am leaving without you.
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteMessagesByHash" classname="com.mycompany.login1.TestPart3" time="0.011">
+    <failure message="Result should confirm deletion. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Result should confirm deletion. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.mycompany.login1.TestPart3.testDeleteMessagesByHash(TestPart3.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+  </testcase>
+</testsuite>
