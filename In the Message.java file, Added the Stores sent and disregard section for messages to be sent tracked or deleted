@@ -1,0 +1,24 @@
+//Allows users to send or disregard  or keep messages 
+public String sentMessage(int choice){
+    switch(choice){
+      case 1: // ---- SEND ----
+StringBuilder entry = new StringBuilder();
+entry.append("Message ID: ").append(messageID);
+entry.append(" | Hash: ").append(messageHash);
+entry.append(" | Recipient: ").append(recipient);
+entry.append(" | Message: ").append(messageText);
+ //Add to the shared  Arraylist 
+ sentMessages.add(entry.toString());
+ //This will track the ttal number of messages sent throughout the scession 
+ totalMessagesSent++;
+return "Message successfully sent.";
+case 2: // ---- DISREGARD ----
+return "Press 0 to delete the message.";
+ case 3: // ---- STORE ----
+storeMessage();
+return "Message successfully stored.";
+ 
+default:
+return "Invalid option. Please choose 1, 2, or 3.";
+        }
+    }
