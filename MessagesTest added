@@ -1,0 +1,161 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ */
+package com.mycompany.login1;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+
+
+/**
+ *
+ * @author User
+ */
+public class TestMessages {
+
+private Messages messages;
+// Test values used throughout the class
+private final String TEST_RECIPIENT = "+27718693002";
+private final String TEST_MESSAGE ="Hi Mike, can you join us for dinner tonight?";
+private final int TEST_NUM = 2;
+   
+
+
+@BeforeEach
+public void setUp() {
+// Create a fresh Messages object before each test
+messages = new Messages(TEST_RECIPIENT,TEST_MESSAGE,TEST_NUM );
+  }
+
+
+    // Message ID Tests
+  
+@Test
+public void testMessageID_IsGenerated() {
+String id = messages.getMessageID();
+assertNotNull(id, "Message ID should be generated."  );         
+System.out.println("Generated ID: " + id);
+ }
+     
+@Test
+public void testMessageID_IsExactly10Digits() {
+assertTrue(  messages.checkMessageID(),"Message ID must contain 10 digits."   );
+      }
+
+    // Message Length Tests
+    
+    @Test
+public void testMessageLength_Success() {
+Messages shortMsg =new Messages(  TEST_RECIPIENT, TEST_MESSAGE,TEST_NUM);   
+String result = shortMsg.checkMessageLength();
+assertEquals("Message ready to send.",result);
+       
+}
+
+@Test
+public void testMessageLength_Failure() {
+String longMessage = "A".repeat(260);
+ Messages longMsg =new Messages(TEST_RECIPIENT, longMessage,TEST_NUM ) ;
+String result = longMsg.checkMessageLength();
+ assertEquals(  "Message exceeds the limit of 250 characters by 10; Please minimize the size.",result);
+    }
+
+    // Recipient Validation Tests
+    
+@Test
+public void testRecipientCell_Success() {
+String result = messages.checkRecipientsCell();
+assertEquals( "Cell phone number successfully captured.",result );
+       
+    }
+
+@Test
+public void testRecipientCell_NoInternationalCode() {
+Messages invalidNumber = new Messages(  "0718693002",TEST_MESSAGE,TEST_NUM);
+String result =invalidNumber.checkRecipientsCell();
+assertEquals( "Cell number is incorrectly formatted or does not contain an international code; Please correct the number and try again.", result  );
+     }
+
+@Test
+public void testRecipientCell_TooLong() {
+ Messages invalidNumber = new Messages("+2771869300299", TEST_MESSAGE,TEST_NUM );
+String result =invalidNumber.checkRecipientsCell();
+assertEquals( "Cell number is incorrectly formatted or does not contain an international code; Please correct the number and try again.",result  );
+ }
+
+// Message Hash Tests
+ 
+@Test
+public void testMessageHash_NotNull() {
+assertNotNull(messages.getMessageHash(),"Message hash should be generated.");
+        
+    }
+
+@Test
+public void testMessageHash_IsUppercase() {
+ String hash = messages.getMessageHash();              
+ assertEquals( hash.toUpperCase(), hash,"Hash must be uppercase." );
+  }
+
+@Test
+public void testMessageHash_ContainsColon() {
+String hash = messages.getMessageHash();
+assertTrue(hash.contains(":"), "Hash should contain ':' separators.");
+    }
+
+@Test
+public void testMessageHash_EndsCorrectly() {
+String hash =messages.getMessageHash();
+assertTrue(hash.endsWith("HITONIGHT"), "Hash should end with HITONIGHT.");
+}
+
+    
+// Sent Message Tests
+
+@Test
+public void testSentMessage_Send() {
+String result = messages.SentMessages(1);
+assertEquals( "Message successfully sent.",result);
+    }
+
+@Test
+public void testSentMessage_Disregard() {
+String result =messages.SentMessages(2);
+assertEquals("Press 0 to delete the message.",result);    
+    }
+
+@Test
+public void testSentMessage_Store() {
+ String result = messages.SentMessages(3);
+ assertEquals( "Message successfully stored.",result );
+          }
+
+    // Total Messages Tests
+   
+@Test
+public void testTotalMessages_AfterSend() {
+int before =Messages.returnTotalMessage();  
+messages.SentMessages(1);
+int after = Messages.returnTotalMessage();
+assertEquals(before + 1, after );
+   }
+
+@Test
+public void testTotalMessages_Disregard() {
+int before =  Messages.returnTotalMessage();
+messages.SentMessages(2);
+int after = Messages.returnTotalMessage();
+assertEquals( before,after );
+    }
+
+@Test               
+public void testTotalMessages_Store() {
+int before =Messages.returnTotalMessages();
+messages.SentMessages(3);
+int after = Messages.returnTotalMessages();
+assertEquals(before,after);
+ }
+}
