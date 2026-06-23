@@ -1,0 +1,16 @@
+//Add Jon file to the Message.java filr to store and retrieve the message 
+// source: https://www.w3schools.com/java/java_files_create.app
+public void storeMessages(){
+   try(FileWriter = new FileWriter("message.Json",true)){  // this will apppend the file 
+   file.write("{");
+   file.write("\" messageID\": \"" + messageID + "\", ");
+  file.write("\" messageNumber\": \"" + messageNumber + "\", ") ;
+  file.write("\" messageHash\": \"" + messageHash + "\"," );
+  file.write( "\" recipient \": \"" + recipient + "\",");
+  file.write("}");
+  file.write(System.lineSeparator()); // new message will have a separate line 
+   }
+   catch(IOException e){
+       System.out.println(" Error  storing message:" + e.getMessage());
+   }
+}
