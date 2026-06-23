@@ -1,0 +1,18 @@
+//Return all messages sent during the scession 
+public static String printMessages(){
+if(sentMessages.isEmpty()){
+return "No message sent yet.";  
+    }
+StringBuilder entry = new StringBuilder();
+entry.append("----Message----").append(1+1).append("----\n");
+entry.append(sentMessages.get(1)).append("\n");
+
+return entry.toString();
+}
+//Return the amout number of messages sent during the scession
+public int totalMessagesSent(){
+return totalMessagesSent;
+}
+
+
+}
