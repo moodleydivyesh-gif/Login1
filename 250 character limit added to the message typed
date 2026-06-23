@@ -1,0 +1,8 @@
+//Checking and making sure that the message doesnt exceed 250 characters
+public String checkMessageLength(){
+    if (messageText.length()<= 250 ){
+        return "message ready to send";
+    }
+int excess = messageText.length() - 250 ; // will calculate the lentgh of the message over 250 characters
+Return " Message exceeds the limit of 250 characters by " + excess + "; Please minimize the size.";
+}
